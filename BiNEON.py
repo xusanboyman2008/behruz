@@ -100,7 +100,7 @@ async def mr(data,addr,co):#identifiying with addr[1](PORT)
         await body(addr[1])
 
 @serv.client_exited
-def ex(addr):
+async def ex(addr):
     try:
         global users
         del users[addr[1]]
