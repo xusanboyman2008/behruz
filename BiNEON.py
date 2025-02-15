@@ -87,6 +87,7 @@ async def mr(data,addr,co):#identifiying with addr[1](PORT)
             adminpanel(data[11:].decode())
             await serv.sMessage(addr[1],b'1')
         else:await serv.sMessage(addr[1],'Nope.')
+        print(addr)
         if admin:await serv.sMessage(admin,str(adminret).encode())
         return 0
     elif co==0:
